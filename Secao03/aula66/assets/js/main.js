@@ -1,38 +1,54 @@
-const getTimeFromSeconds = (seconds) => {
-  return new Date(seconds * 1000).toLocaleTimeString("pt-BR", {
-    hour12: false,
-    timeZone: "GMT",
+const inputTarefa = document.querySelector(".input-tarefa");
+const btnTarefa = document.querySelector(".btn-tarefa");
+const tarefas = document.querySelector(".tarefas");
+
+const limparInput = () => {
+  inputTarefa.value = "";
+  inputTarefa.focus();
+};
+
+const salvarTarefas = () => {
+  const liTarefas = tarefas.querySelectorAll("li");
+  const listaDeTarefas = [];
+  liTarefas.forEach((item) => {
+    const tarefaTexto = item.innerText.replace(" Apagar", "");
+    listaDeTarefas.push(tarefaTexto);
   });
+
+  const tarefasJSON = JSON.stringify(listaDeTarefas);
+  localStorage.setItem("tarefas", tarefasJSON);
 };
 
-let segundos = 0;
-let timer;
-const relogio = document.querySelector(".relogio");
-const iniciar = document.querySelector(".iniciar");
-const pausar = document.querySelector(".pausar");
-const zerar = document.querySelector(".zerar");
-
-const startClock = () => {
-  timer = setInterval(() => {
-    segundos++;
-    relogio.innerHTML = getTimeFromSeconds(segundos);
-  }, 1000);
+const criaTarefa = (texto) => {
+  const li = document.createElement("li");
+  const botaoApagar = document.createElement("button");
+  botaoApagar.innerText = "Apagar";
+  botaoApagar.onclick = () => {
+    li.remove();
+    salvarTarefas();
+  };
+  li.innerText = `${texto} `;
+  li.appendChild(botaoApagar);
+  tarefas.appendChild(li);
+  limparInput();
+  salvarTarefas();
 };
 
-iniciar.addEventListener("click", () => {
-  relogio.classList.remove("pausado");
-  clearInterval(timer);
-  startClock();
+inputTarefa.addEventListener("keypress", (e) => {
+  if (e.keyCode === 13) btnTarefa.click();
 });
 
-pausar.addEventListener("click", () => {
-  relogio.classList.add("pausado");
-  clearInterval(timer);
+btnTarefa.addEventListener("click", (e) => {
+  if (!inputTarefa.value.trim()) return;
+  criaTarefa(inputTarefa.value);
 });
 
-zerar.addEventListener("click", () => {
-  relogio.classList.remove("pausado");
-  clearInterval(timer);
-  relogio.innerHTML = "00:00:00";
-  segundos = 0;
-});
+const addicionaTarefasSalvas = () => {
+  const tarefas = localStorage.getItem("tarefas");
+  const parseTarefas = JSON.parse(tarefas);
+  for (let tarefa of parseTarefas) {
+    criaTarefa(tarefa);
+  }
+};
+
+addicionaTarefasSalvas();
