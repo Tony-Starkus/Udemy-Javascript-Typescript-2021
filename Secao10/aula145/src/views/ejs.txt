@@ -1,0 +1,5 @@
+<% Controle de fluxo (if, for...) %>
+<%= Imprime o conteúdo na integra %>
+<%- Imprime interpretando o código no conteúdo %>
+<%# Comentário %>
+<%- include('CAMINHO/ARQUIVO'); %>

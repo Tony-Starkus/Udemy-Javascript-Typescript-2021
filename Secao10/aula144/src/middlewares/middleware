@@ -1,0 +1,4 @@
+exports.middlewareGlobal = (req, res, next) => {
+  res.locals.umaVariavelGlobal = 'Este é o valor da variável global.';
+  next();
+};
