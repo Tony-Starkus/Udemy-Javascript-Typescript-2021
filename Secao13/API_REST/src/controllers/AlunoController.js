@@ -62,7 +62,7 @@ class AlunoController {
         },
       });
 
-      if (!aluno) res.status(404).json({ errors: ["Aluno não existe"] });
+      if (!aluno) return res.status(404).json({ errors: ["Aluno não existe"] });
 
       return res.json(aluno);
     } catch (e) {
