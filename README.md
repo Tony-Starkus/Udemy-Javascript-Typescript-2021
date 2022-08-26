@@ -20,3 +20,4 @@ Course on Udemy about Javascript
 | 14    | React com componentes de classe (Básico) - JavaScript                            |
 | 15    | React - Redux - Saga - React Hooks e componentes funcionais - Avançado           |
 | 16    | React Router Dom v6                                                              |
+| 17    | Expressões regulares em JavaScript - Regex                                       |
