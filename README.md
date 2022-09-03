@@ -21,3 +21,5 @@ Course on Udemy about Javascript
 | 15    | React - Redux - Saga - React Hooks e componentes funcionais - Avançado           |
 | 16    | React Router Dom v6                                                              |
 | 17    | Expressões regulares em JavaScript - Regex                                       |
+| 18    | TypeScript - Instalação                                                          |
+| 19    | TypeScript - Tipos básicos                                                       |
