@@ -23,3 +23,4 @@ Course on Udemy about Javascript
 | 17    | Expressões regulares em JavaScript - Regex                                       |
 | 18    | TypeScript - Instalação                                                          |
 | 19    | TypeScript - Tipos básicos                                                       |
+| 20    | TypeScript - Classes e Interfaces - Programação Orientada a Objetos - POO        |
