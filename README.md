@@ -24,4 +24,5 @@ Course on Udemy about Javascript
 | 18    | TypeScript - Instalação                                                          |
 | 19    | TypeScript - Tipos básicos                                                       |
 | 20    | TypeScript - Classes e Interfaces - Programação Orientada a Objetos - POO        |
-| 21    | TypeScript - Decorators (Decoradores)                                            |
+| 21    | TypeScript - Tipos avançados                                                     |
+| 23    | TypeScript - Decorators (Decoradores)                                            |
