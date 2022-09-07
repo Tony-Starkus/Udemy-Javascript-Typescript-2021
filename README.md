@@ -25,4 +25,5 @@ Course on Udemy about Javascript
 | 19    | TypeScript - Tipos básicos                                                       |
 | 20    | TypeScript - Classes e Interfaces - Programação Orientada a Objetos - POO        |
 | 21    | TypeScript - Tipos avançados                                                     |
+| 22    | TypeScript - Generics (Generic Type)                                             |
 | 23    | TypeScript - Decorators (Decoradores)                                            |
