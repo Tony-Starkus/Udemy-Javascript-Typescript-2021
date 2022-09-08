@@ -27,3 +27,4 @@ Course on Udemy about Javascript
 | 21    | TypeScript - Tipos avançados                                                     |
 | 22    | TypeScript - Generics (Generic Type)                                             |
 | 23    | TypeScript - Decorators (Decoradores)                                            |
+| 24    | TypeScript - Namespaces e modules (módulos)                                      |
