@@ -29,3 +29,4 @@ Course on Udemy about Javascript
 | 23    | TypeScript - Decorators (Decoradores)                                            |
 | 24    | TypeScript - Namespaces e modules (módulos)                                      |
 | 25    | TypeScript - Princípios SOLID (S.O.L.I.D)                                        |
+| 26    | TypeScript - Testes com Jest                                                     |
