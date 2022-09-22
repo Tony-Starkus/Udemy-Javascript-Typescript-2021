@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Comments from '../../components/Comments';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -8,6 +9,8 @@ import PostContainer from '../../components/PostContainer';
 import PostCover from '../../components/PostCover';
 import PostDetails from '../../components/PostDetails';
 import { PostData } from '../../domain/posts/post';
+import { SITE_NAME } from '../../config/app-config';
+import { removeHtml } from '../../utils/remove-html';
 
 export type PostProps = {
   post: PostData;
@@ -17,6 +20,15 @@ export const Post: React.FC<PostProps> = ({ post }) => {
   console.log(post);
   return (
     <>
+      <Head>
+        <title>
+          {post.attributes.title} - {SITE_NAME}
+        </title>
+        <meta
+          name="description"
+          content={removeHtml(post.attributes.content)}
+        />
+      </Head>
       <Header />
       <MainContainer>
         <Heading>{post.attributes.title}</Heading>

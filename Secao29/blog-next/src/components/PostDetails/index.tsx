@@ -2,6 +2,7 @@ import React from 'react';
 import { formatDate } from '../../utils/format-date';
 import { Container } from './styled';
 import Date from '../Date';
+import Link from 'next/link';
 
 export type PostDetailsProps = {
   author: string;
@@ -16,7 +17,13 @@ const PostDetails: React.FC<PostDetailsProps> = ({
 }) => {
   return (
     <Container>
-      Publicado em <Date date={date} /> por {author} | {category}
+      Publicado em <Date date={date} /> por {author} |{' '}
+      <Link
+        as={`/post/page/1/${category.toLowerCase()}`}
+        href="/post/page/[...param]"
+      >
+        <a>{category}</a>
+      </Link>
     </Container>
   );
 };
