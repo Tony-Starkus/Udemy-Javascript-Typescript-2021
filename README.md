@@ -33,3 +33,11 @@ Course on Udemy about Javascript
 | 27    | TypeScript - TypeScript e React (Pomodoro App)                                                           |
 | 28    | TypeScript - Design Patterns - Padrões de projeto - GOF                                                  |
 | 29    | NextJS (um framework baseado em React) e Strapi para criar API REST rapidamente                          |
+| 30    | Deploy NextJS + Strapi no Ubuntu Server 20.04                                                            |
+| 31    | Base de dados Relacionais - SQL - MySQL ou MariaDB                                                       |
+| 32    | Knex.js - SQL Query Builder para Postgres, MySQL, MariaDB, SQLIte3 e muito mais                          |
+| 33    | HTML5 e CSS3 (Para iniciantes)                                                                           |
+| 34    | Landing Page com HTML5 e CSS3                                                                            |
+| 35    | #EXTRA - Comandos Linux/Unix mais usados - Aprenda a navegar no terminal (BÔNUS)                         |
+| 36    | Notas finais                                                                                             |
+| 37    | ## MAIS BÔNUS GRATUITOS ##                                                                               |
